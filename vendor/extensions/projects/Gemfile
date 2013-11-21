@@ -4,6 +4,7 @@ gemspec
 
 gem 'refinerycms', '~> 2.1.0'
 
+
 # Database Configuration
 platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter'

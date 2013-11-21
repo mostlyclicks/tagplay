@@ -3,6 +3,7 @@ Refinery::Core::Engine.routes.draw do
   # Frontend routes
   namespace :projects do
     resources :projects, :path => '', :only => [:index, :show]
+    get 'tags/:tag', to: 'projects#index', as: :tag
   end
 
   # Admin routes

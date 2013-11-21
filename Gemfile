@@ -6,7 +6,13 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+  
   gem 'sqlite3'
+end
+
+group :development do
+	gem 'better_errors'
+	gem 'binding_of_caller'
 end
 
 
@@ -42,6 +48,7 @@ gem 'jquery-rails'
 # Refinery CMS
 gem 'refinerycms', '~> 2.1.0'
 gem 'globalize3', '0.3.0'
+
 
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
